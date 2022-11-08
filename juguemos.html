@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Proyecto-Final</title>
+    <link rel="icon" href="./assets/imagenes/logo.svg">
+</head>
+<body class="fondo-verde">
+    <nav class="fondo-verde">
+        <a href="./index.html">
+            <svg width="200" height = "80" id="logo">
+                <rect x="45" y="5" width="60" height="35" rx="5" fill="#3F6797" id="mon1"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" fill="#B1D5E4" id="mon2"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#3F6797" id="tec1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#B1D5E4" id="tec2"></polygon>
+            </svg>
+        </a>
+            <ul>
+                <li id="button1"><a href="./historia.html" class="link">HISTORIA</a></li>
+                <li id="button2"><a href="./juguemos.html" class="link">JUGUEMOS</a></li>
+            </ul>
+    </nav>
+    <header>
+        <h1>
+            JUGUEMOS UN POCO
+        </h1>
+    </header>
+    <div id="contenedor-juego">
+        <h2 class="subtitulo subtitulo-juego">
+            Armemos el rompecabezas y veamos que imagen es...
+        </h2>
+        <div id="rompecabezas">
+            <div class="tablero">Arrastre y suelte la imagne aquí</div>
+            <div class="tablero">Arrastre y suelte la imagne aquí</div>
+            <div class="tablero">Arrastre y suelte la imagne aquí</div>
+        </div>
+        <div id="contenedor-imagenes">
+            <div class="imagen1">
+                <img src="./assets/imagenes/rompe2.png" alt="imagen-rompecabezas2" class="pieza">
+            </div>
+            <div class="imagen2">
+                <img src="./assets/imagenes/Rompe1.png" alt="imagen-rompecabezas1" class="pieza">
+            </div>
+            <div class="imagen3">
+                <img src="./assets/imagenes/Rompe3.png" alt="imagen-rompecabezas3" class="pieza">
+            </div>
+        </div>
+        <button class="boton-reinicio">Reiniciar</button>
+    </div>
+    <script src="./juego.js"></script>
+</body>
+</html>
